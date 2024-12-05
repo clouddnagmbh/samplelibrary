@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>at.clouddna.samplelibrary</name>
+	<vendor>myorg</vendor>
+	<version>1.0.0</version>
+	<copyright>(c) 2023 at.clouddna.samplelibrary contributors</copyright>
+	<title>at.clouddna.samplelibrary</title>
+	<documentation>samplelibrary - SAPUI5 Bibliothek</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+</library>

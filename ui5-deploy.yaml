@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.6"
+metadata:
+  name: at.clouddna.samplelibrary
+type: library
+builder:
+  resources:
+    configuration:
+      paths:
+        src: dist/resources/at/clouddna/samplelibrary/
+    excludes:
+      - /test-resources/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: <paste system url>
+          client: "100"
+        app:
+          name: <BSP name>
+          description: <description>
+          package: <package>
+          transport: <transport request>
+        exclude:
+          - /test-resources/

@@ -1,0 +1,8 @@
+specVersion: "3.0"
+metadata:
+  name: "at.clouddna.samplelibrary"
+type: library
+builder:
+  customTasks:
+    - name: ui5-tooling-transpile-task
+      afterTask: replaceVersion
