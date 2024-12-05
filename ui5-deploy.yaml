@@ -17,12 +17,12 @@ builder:
       afterTask: generateCachebusterInfo
       configuration:
         target:
-          url: <paste system url>
-          client: "100"
+          url: <url>
+          client: <client>
         app:
-          name: <BSP name>
+          name: <bsp name>
           description: <description>
           package: <package>
-          transport: <transport request>
+          transport: <transport>
         exclude:
-          - /test-resources/
+          - /test/

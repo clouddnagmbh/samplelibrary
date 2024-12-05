@@ -12,8 +12,13 @@ sap.ui.getCore().initLibrary({
 	],
 	types: [],
 	interfaces: [],
-	controls: [],
-	elements: [],
+	controls: [
+		"at.clouddna.samplelibrary.CancellationButton",
+		"at.clouddna.samplelibrary.PropertyList",
+	],
+	elements: [
+		"at.clouddna.samplelibrary.PropertyListRenderer",
+	],
 	noLibraryCSS: true
 });
 

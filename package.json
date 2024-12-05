@@ -24,9 +24,9 @@
 		"deploy-config": "fiori add deploy-config",
 		"deploy": "npm run build && fiori deploy --config ui5-deploy.yaml && rimraf archive.zip",
 		"build": "npm run clean && ui5 build --exclude-task buildThemes --include-task=generateManifestBundle generateCachebusterInfo && npm run flatten && npm run clean-after-flatten",
-		"flatten": "copy dist\\resources\\de\\dzhyp\\samplelibrary\\* dist\\",
+		"flatten": "cp -R './dist/resources/at/clouddna/samplelibrary/' './dist'",
 		"clean": "npx rimraf ExampleLibrary-content.zip dist",
-		"clean-after-flatten": "rmdir /s /q dist\\resources dist\\test-resources"
+		"clean-after-flatten": "rm -rf './dist/resources' './dist/test-resources'"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "7.14.7",
